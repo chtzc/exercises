@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Slider</title>
+	<style>
+		.slider {
+			width: 100%;
+			height: 400px;
+			overflow: hidden;
+		}
+		.slider img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.3s ease;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="slider">
+		<div class="slider-container">
+			<img src="../../tank.jpg" alt="Image 1">
+			
+		</div>
+        <div class="slider-container">
+			<img src="../../tank.jpg" alt="Image 2">
+			
+		</div>
+        <div class="slider-container">
+			<img src="../../tank.jpg" alt="Image 3">
+			
+		</div>
+	</div>
+	<script>
+		let slider = document.querySelector('.slider-container');
+		let images = slider.querySelectorAll('img');
+		let currentImage = 0;
+
+		setInterval(() => {
+			currentImage = (currentImage + 1) % images.length;
+			slider.style.transform = `translateX(-${currentImage * 100}%)`;
+		}, 5000);
+	</script>
+</body>
+</html>
