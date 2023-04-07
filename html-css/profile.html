@@ -10,28 +10,45 @@
             background-color: black;
             color:white;
             font-family: 'Schibsted Grotesk', sans-serif;
-            
+            border: solid;
         }
         h1 {
-            color: red
+            color: red;
+            border-bottom:solid red 2px;
+            padding: 20px 10px;
+            margin: 0px 15px;
+            
         }
         span {
             font-size: larger;
         }
-        
+        section {
+            border: solid;
+            padding: 10px 10px 10px 10px;
+            margin: 5px 5px 5px 5px;
+        }
+        div {
+            border: solid red;
+            padding: 10px 10px 10px 10px;
+            color: green
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
+   
     <h1>Profile</h1>
-    <img src="../profile.png" alt="profile-pic" width="100" height="100">
-    <p>Hello, my name is <span style="color:blue">Cihat Ozcan</span>
-    <br/>
-     I'm an student at Tech global</p>
-    <br/>
-    <br/>
-    <div style="color: green">I've been learning programming for three days</div>
+    <hr>
+    <section>
+    <img src="profile.png" alt="profile-pic" width="100" height="100">
+    <p>Hello, my name is <span style="color:blue; border: double; border-color: blueviolet;">Cihat Ozcan</span>
+        <p>I'm an student at Tech global</p>
+    </section>
+        <br/>
+     <section>
+    <div>I've been learning programming for three days</div>
+</section>
 </body>
 </html>

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "exercises",
+			"path": "."
+		},
+		{
+			"name": "html-css",
+			"path": "../../../Github/html-css"
+		}
+	],
+	"settings": {}
+}
