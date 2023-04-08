@@ -14,12 +14,62 @@
         text-align: center;
         
       }
+      a:link {
+        color: black;
+      }
+      a:visited {
+        color: red;
+      }
+      a:hover {
+        color: aquamarine;
+      }
+      a:active {
+        color:aqua
+      }
+      :root {
+        background-color: beige;
+      }
+      ul li:first-child {
+        background-color: aquamarine;
+      }
+      ul li:last-child {
+        background-color: blue;
+      }
+      ul li:nth-child(3) {
+        background-color: aqua;
+      }
+      span::before {
+        content: "school ";
+      }
+      span::after {
+        content: " night"
+      }
+      .lorem::first-line {
+        color: red;
+        font-size: xx-large;
+      }
+      
     </style>
   </head>
   <body>
     <div>
       <h1>Box Model</h1>
       <div class="box">BOX</div>
+      <hr/>
     </div>
+    <a href="https://www.twitter.com">Unvisited link</a>
+    <hr>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        
+    </ul>
+    <h2>Pseudo Elements</h2>
+    <span>asdsa</span>
+    <hr>
+    <div class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, eveniet sunt neque temporibus numquam consequuntur odit veritatis quae sequi a expedita, tempore quibusdam hic. Sapiente perferendis assumenda neque dolor nesciunt?</div>
   </body>
 </html>
