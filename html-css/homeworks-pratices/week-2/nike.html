@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .main-container > div {
+        /* Remove after finising */
+        border: 5px solid black;
+      }
+
+      .box-container {
+        display: flex;
+        justify-content: space-around;
+      }
+      .box {
+        flex-basis: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .box h3,
+      p {
+        margin: 0;
+      }
+
+      .shoe-container {
+        display: flex;
+      }
+
+      .shoe-image {
+        background-color: blue;
+        flex: 2 1 67%;
+      }
+      .shoe-model {
+        background-color: red;
+        flex: 1 1 33%;
+      }
+      body {
+        background-color: black;
+        margin: 0px;
+      }
+      .title-container {
+        color: rgb(36, 94, 165);
+        font-size: 150px;
+        margin-top: 50px;
+        background-image: url("https://i.pinimg.com/236x/3d/1f/2d/3d1f2d2727720bf851cfceac57602f3e.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border: solid beige 1px;
+        margin-left: 20px;
+      }
+      hr {
+        color: white;
+        width: 100%;
+      }
+
+      #nike {
+        opacity: 0.5;
+      }
+      .buy-container {
+        color: gray;
+        height: 20vh;
+        text-align: center;
+        font-size: 30px;
+        margin: 0px;
+      }
+      .box-container {
+        background-color: gray;
+        height: 20vh;
+        display: flex;
+      }
+      .box {
+        margin: 0px;
+      }
+      .shoe-container {
+        display: flex;
+      }
+      img[alt="shoe"] {
+        width: 100vh;
+      }
+      .shoe-model {
+        text-align: center;
+        background-color: black;
+        color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+      }
+      .details-container {
+        display: flex;
+        color: gray;
+        font-size: 30px;
+      }
+      .legendary {
+        width: 100vh;
+        margin: 40px;
+      }
+      p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+      }
+      .product-details {
+        margin: 40px;
+      }
+      .warning-container {
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        align-items: start;     
+        font-size: 40px;   
+      }
+      button {
+        padding: 40px;
+        background-color: lightblue;
+        font-size: 100%;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <hr style="margin-top: 100px" />
+      <div class="title-container">
+        DESIGNED BY
+        <div id="nike">NIKE</div>
+      </div>
+      <hr />
+      <div class="buy-container">
+        <div><strong>Buy, Sell</strong> and <strong>Learn.</strong></div>
+      </div>
+      <hr />
+      <div class="box-container">
+        <div class="box">
+          <h3>Box</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+            possimus?
+          </p>
+        </div>
+        <div class="box">
+          <h3>Box</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+            possimus?
+          </p>
+        </div>
+        <div class="box">
+          <h3>Box</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+            possimus?
+          </p>
+        </div>
+      </div>
+      <div class="shoe-container">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtxp4Kzi0GwRxO5mjtN-EdtHXfDml5cMPgpBznq50xrw&usqp=CAU&ec=48665701"
+          alt="shoe"
+        />
+        <div class="shoe-model"><strong>Nike Air Max</strong></div>
+      </div>
+      <div class="details-container">
+        <div class="legendary">
+          <h2>Legendary Status</h2>
+          <p>
+            Featuring the original ripple design inspired by Japanese bullet
+            trains, the Nike Air Max 97 lets you push your style full-speed
+            ahead. Taking the revolutionary full-length Nike Air unit that shook
+            up the running world and adding fresh colors and crisp details, it
+            lets you ride in first-class comfort.
+          </p>
+        </div>
+        <div class="product-details">
+          <h3>Product Details</h3>
+          <ul>
+            <li>The foam sockliner feels soft and comfortable</li>
+            <li>Pull tab</li>
+            <li>Not intended for use as Personal Protective Equipment</li>
+            <li>Shown: Black/White</li>
+            <li>Style: 921826-001</li>
+          </ul>
+        </div>
+      </div>
+      <div class="warning-container">
+        <h3>A little Reminder</h3>
+        <p>
+          This website is half responsive. Do not assume it will look good in
+          all screen sizes. It is done just to demonstrate some Flebox features.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
+          delectus ullam beatae quia at quod velit non, atque cupiditate fuga
+          necessitatibus, possimus sint et veniam magnam odio rerum iure
+          molestias?
+        </p>
+        <button type="submit">Login</button>
+      </div>
+    </div>
+  </body>
+</html>

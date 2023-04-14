@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+      
+        table {
+         
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            justify-content:flex-start
+        }
+      
+        thead tr:nth-child(1) {
+            background-color: black;
+            color: white;
+            font-size: small;
+        }
+        .small-box {
+            border: solid 1px black;
+            background-color: orange;
+        }
+        th{
+            gap:1px;
+            padding: 10px;
+            width: 100%;
+
+        }
+      
+        .big-box:last-child {
+            color: black;
+            background-color: lightskyblue;
+        }
+        .big-box:first-child {
+            color: black;
+            background-color: red;
+         
+        }
+        
+        .top-flex  {
+            display: flex;
+        }
+        tr {
+            display: flex;
+
+        }
+    
+        body {
+            display: flex;
+    
+        }
+        .right-flex {
+            display: flex;
+            flex-direction: column;
+            width: 5%;
+            background-color: black;
+        }
+        .right-flex div{
+        text-align: center;
+            width: 100%;
+            pad: 20px;
+            height: 100%;
+            font-size: 30px;
+        }
+        .right-flex div:last-child{
+            border: solid black 1px;
+            
+        }
+        .right-flex div:first-child{
+flex: 0.6;
+color: white;
+        }
+    </style>
+</head>
+<body>
+        <table>
+            <thead>
+                <div class="top-flex">
+                    <tr>
+                        <th style="color:black">0</th>
+                    </tr>
+                <tr>
+                    <div class="top-box-flex">
+                    <th class="big-box" colspan="2">AC</th>
+                    <th class="small-box">/</th>
+                    <th class="small-box">X</th>
+                </div>
+                </tr></div>
+            </thead>
+            <tbody>
+                <div class="flexingnumber">
+                <div class="number-flex">
+                <tr>
+                    <th class="small-box">7</th>
+                    <th class="small-box">8</th>
+                    <th class="small-box">9</th>
+                </tr>
+                <tr>
+                    <th class="small-box">4</th>
+                    <th class="small-box">5</th>
+                    <th class="small-box">6</th>
+                </tr>
+                <tr>
+                    <th class="small-box">1</th>
+                    <th class="small-box">2</th>
+                    <th class="small-box">3</th>
+
+                </tr>
+                <tr>
+                    <th class="small-box">0</th>
+                    <th class="small-box">.</th>
+                </tr>
+        
+
+            </tbody>
+        </table>
+
+    </div>
+    <div class="right-flex">
+        <div>0</div>
+        <div class="small-box">-</div>
+    <div class="small-box">+</div>
+    <div class="big-box">=</div>
+    </div>
+</div>
+    
+</body>
+</html>
