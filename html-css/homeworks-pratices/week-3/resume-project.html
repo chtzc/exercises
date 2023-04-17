@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+  </head>
+  <style>
+    .left-container {
+      border: solid black 1px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: rgb(192, 158, 114);
+      align-items: flex-start;
+      width: 20%;
+    }
+    .right-container {
+      flex-grow: 20;
+      background-color: rgb(186, 141, 81);
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+
+    }
+    .right-container > div {
+        margin-left: 30px;
+    }
+    .left-container>div {
+        flex-grow: 1;
+    }
+    h3 {
+    }
+    .resume-container {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+    }
+    body {
+      margin: 0px;
+    }
+    img {
+      border-radius: 50%;
+      flex: 1;
+      width: 80%;
+      margin-top: 30px;
+      margin-left: 10px;
+
+    }
+ul{
+    list-style: square;
+}
+h4{
+    color: white;
+    background-color: gray;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+
+}
+
+  </style>
+  <body>
+    <div class="resume-container">
+      <div class="left-container">
+        <img src="../../profile.png" alt="profile" />
+
+        <div class="contact-container">
+          <h4>CONTACT</h4>
+          <div>Emailm</div>
+          <div>phone: +21312321</div>
+          <div>address: Dallas, TX</div>
+        </div>
+        <div class="skills-container">
+          <h4>SKILLS</h4>
+          <ul>
+            <li>JS</li>
+            <li>React</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Git</li>
+          </ul>
+        </div>
+        <div class="projects-container">
+          <h4>PROJECTS</h4>
+          <a href="www.github.com">First Project</a>
+          <a href="www.github.com">First Project</a>
+        </div>
+      </div>
+      <div class="right-container">
+        <h3>About Me</h3>
+        <div class="about-me">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit et
+          dolorem repellendus, asperiores voluptate magni repellat ullam sint,
+          ratione debitis culpa aut, minima nemo non eveniet fugiat
+          necessitatibus ea fugit!
+        </div>
+        <div class="experiences">
+          <div class="experience-details">
+            <h5>Company</h5>
+            <span class="experience-date">2022 -2023</span>
+            <span class="experience-title">QA</span>
+            <ul>
+              <li>Some experience</li>
+              <li>Some experience</li>
+              <li>Some experience</li>
+              <li>Some experience</li>
+              <li>Some experience</li>
+              <li>Some experience</li>
+            </ul>
+          </div>
+          <div class="experience-details">
+            <h5>Company</h5>
+            <span class="experience-date">2022 -2023</span>
+            <span class="experience-title">QA</span>
+            <ul>
+              <li>Some experience</li>
+              <li>Some experience</li>
+              <li>Some experience</li>
+              <li>Some experience</li>
+              <li>Some experience</li>
+              <li>Some experience</li>
+            </ul>
+          </div> <div class="experience-details">
+            <h5>Company</h5>
+            <span class="experience-date">2022 -2023</span>
+            <span class="experience-title">QA</span>
+            <ul>
+              <li>Some experience</li>
+              <li>Some experience</li>
+              <li>Some experience</li>
+              <li>Some experience</li>
+              <li>Some experience</li>
+              <li>Some experience</li>
+            </ul>
+          </div> <div class="experience-details">
+            <h5>Company</h5>
+            <span class="experience-date">2022 -2023</span>
+            <span class="experience-title">QA</span>
+            <ul>
+              <li>Some experience</li>
+              <li>Some experience</li>
+              <li>Some experience</li>
+              <li>Some experience</li>
+              <li>Some experience</li>
+              <li>Some experience</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
