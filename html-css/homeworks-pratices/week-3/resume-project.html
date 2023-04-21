@@ -5,148 +5,303 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
-  </head>
-  <style>
-    .left-container {
-      border: solid black 1px;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      background-color: rgb(192, 158, 114);
-      align-items: flex-start;
-      width: 20%;
-    }
-    .right-container {
-      flex-grow: 20;
-      background-color: rgb(186, 141, 81);
-      display: flex;
-      justify-content: space-evenly;
-      flex-direction: column;
-
-    }
-    .right-container > div {
-        margin-left: 30px;
-    }
-    .left-container>div {
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&family=Schibsted+Grotesk:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .left-container {
+        display: flex;
+        flex-direction: column;
         flex-grow: 1;
-    }
-    h3 {
-    }
-    .resume-container {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      height: 100%;
-    }
-    body {
-      margin: 0px;
-    }
-    img {
-      border-radius: 50%;
-      flex: 1;
-      width: 80%;
-      margin-top: 30px;
-      margin-left: 10px;
+        width: 20%;
+        justify-content: flex-start;
+        border-right: solid 0.5px #a2a8d3;
+      }
+      .right-container {
+        flex-grow: 20;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+      }
 
-    }
-ul{
-    list-style: square;
-}
-h4{
-    color: white;
-    background-color: gray;
-    padding: 5px;
-    text-align: center;
-    width: 100%;
+      .resume-container {
+        background-color: #fffde8;
 
-}
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        margin: 0px;
+        font-family: "Raleway", sans-serif;
+        font-family: "Schibsted Grotesk", sans-serif;
+      }
+      img {
+        border-radius: 50%;
+        margin: 20px;
+      }
+      ul {
+        list-style: square;
+      }
+      #header-div {
+        background-color: #a2a8d3;
+        text-align: center;
+        border-radius: 30px;
+        padding: 20px;
+        opacity: 0.8;
+        transition: 0.4s ease-out;
+        transition-delay: 1s;
+      }
+      #header-div .second-text {
+        display: none;
+      }
+      #header-div:hover {
+        transition: 2s;
+        margin: 20px;
 
-  </style>
+        animation: shake 2s;
+
+        animation-iteration-count: 1.5;
+        opacity: 1;
+      }
+
+      #header-div:hover .first-text {
+        display: none;
+      }
+      #header-div:hover .second-text {
+        display: inline;
+      }
+      .second-text a {
+        color: #38598b;
+        margin-top: 10px;
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        margin: 20px;
+      }
+      li::marker {
+        content: "=>";
+      }
+      .about-me {
+      }
+      .about-me h3 {
+        text-align: center;
+        border: solid 1px #38598b;
+        background-color: #a2a8d3;
+        border-radius: 40%;
+        width: 30%;
+        margin-left: 150px;
+      }
+      @keyframes shake {
+        0% {
+          transform: translate(1px, 1px) rotate(0deg);
+        }
+        10% {
+          transform: translate(-1px, -2px) rotate(-1deg);
+        }
+        20% {
+          transform: translate(-3px, 0px) rotate(1deg);
+        }
+        30% {
+          transform: translate(3px, 2px) rotate(0deg);
+        }
+        40% {
+          transform: translate(1px, -1px) rotate(1deg);
+        }
+        50% {
+          transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        60% {
+          transform: translate(-3px, 1px) rotate(0deg);
+        }
+        70% {
+          transform: translate(3px, 1px) rotate(-1deg);
+        }
+        80% {
+          transform: translate(-1px, -1px) rotate(1deg);
+        }
+        90% {
+          transform: translate(1px, 2px) rotate(0deg);
+        }
+        100% {
+          transform: translate(1px, -2px) rotate(-1deg);
+        }
+      }
+    </style>
+  </head>
+
   <body>
     <div class="resume-container">
       <div class="left-container">
         <img src="../../profile.png" alt="profile" />
+        <div id="header-div">
+          <span class="first-text"><span>&#128222; </span>CONTACT</span>
+          <span class="second-text"
+            ><span style="font-size: 20px">&#128233;</span> <br />
+            cihatozcan.us@gmail.com <br />
+            <span style="font-size: 20px">&#128241;<br /></span>
+            81231231 <br />
+            <span style="font-size: 20px">&#128234;<br /></span>
+            9123 university blvd 106 tx dallas</span
+          >
+        </div>
+        <div id="header-div">
+          <span class="first-text">SKILLS</span>
+          <span class="second-text"
+            ><ul>
+              <li>HTML & CSS.</li>
+              <li>Javascript.</li>
+              <li>TypeScript.</li>
+              <li>Frameworks and Libraries.</li>
+              <li>CSS Preprocessors.</li>
+              <li>Responsive Design.</li>
+              <li>Cross-Browser Compatibility.</li>
 
-        <div class="contact-container">
-          <h4>CONTACT</h4>
-          <div>Emailm</div>
-          <div>phone: +21312321</div>
-          <div>address: Dallas, TX</div>
+              <li>Version Control.</li>
+            </ul></span
+          >
         </div>
-        <div class="skills-container">
-          <h4>SKILLS</h4>
-          <ul>
-            <li>JS</li>
-            <li>React</li>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Git</li>
-          </ul>
-        </div>
-        <div class="projects-container">
-          <h4>PROJECTS</h4>
-          <a href="www.github.com">First Project</a>
-          <a href="www.github.com">First Project</a>
+
+        <div id="header-div">
+          <span class="first-text">PROJECTS</span>
+          <span class="second-text">
+            <ul>
+              <li><a href="www.google.com">Projects</a></li>
+              <li><a href="www.google.com">Projects</a></li>
+              <li><a href="www.google.com">Projects</a></li>
+              <li><a href="www.google.com">Projects</a></li>
+              <li><a href="www.google.com">Projects</a></li>
+              <li><a href="www.google.com">Projects</a></li>
+            </ul>
+          </span>
         </div>
       </div>
+
       <div class="right-container">
-        <h3>About Me</h3>
         <div class="about-me">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit et
-          dolorem repellendus, asperiores voluptate magni repellat ullam sint,
-          ratione debitis culpa aut, minima nemo non eveniet fugiat
-          necessitatibus ea fugit!
+          <h3>Professional Experience</h3>
+          <hr />
+
+          QA Engineer with 5+ years of experience in the IT industry with focus
+          on Software Quality Assurance through Manual and Automation Testing of
+          Web-Based applications. Experience working in Agile (Scrum) model and
+          good knowledge of Waterfall model. Experience in testing applications
+          in domains like Finance, Retail and Healthcare. Hands on experience in
+          creating Test Plan, Test Scenarios, Test Cases, Test Data, and
+          performing Test Execution. Experience in testing: Positive Testing,
+          Negative Testing, Functional Testing, Smoke Testing, Regression
+          Testing, Black Box Testing, End to Testing, API Backend and Database
+          Testing. Excellent experience in each phase of Software Development
+          Life Cycle (SDLC), Software Testing Life Cycle (STLC) and Defect Life
+          Cycle (DLC), Test Cases, Test Plans, UAT.
         </div>
+
         <div class="experiences">
+          <hr />
           <div class="experience-details">
-            <h5>Company</h5>
+            <h3>Brace AI</h3>
             <span class="experience-date">2022 -2023</span>
             <span class="experience-title">QA</span>
             <ul>
-              <li>Some experience</li>
-              <li>Some experience</li>
-              <li>Some experience</li>
-              <li>Some experience</li>
-              <li>Some experience</li>
-              <li>Some experience</li>
+              <li>
+                Worked in a fast paced Agile Scrum team, closely collaborating
+                with developers and business team members.
+              </li>
+              <li>
+                Followed Agile (SCRUM) Methodologies for all the phases of SDLC.
+              </li>
+              <li>
+                Reviewed User stories and transformed into test cases and test
+                scripts for manual/automated testing.
+              </li>
+              <li>
+                Designed automation scripts to test REST APIs (HTTP Get, Post,
+                Put, Delete) using REST Assured libraries and Postman tools;
+                deserialize and verify http JSON responses.
+              </li>
+              <li>
+                Executed Regression Testing, System Integration Testing, User
+                Acceptance Testing.
+              </li>
+              <li>
+                Analyzed, facilitated, modeled and organized information in
+                order to elicit requirements, reconcile conflicts, and
+                distinguish solution ideas from business needs.
+              </li>
             </ul>
           </div>
+          <hr />
           <div class="experience-details">
-            <h5>Company</h5>
+            <h3>Brace AI</h3>
             <span class="experience-date">2022 -2023</span>
             <span class="experience-title">QA</span>
             <ul>
-              <li>Some experience</li>
-              <li>Some experience</li>
-              <li>Some experience</li>
-              <li>Some experience</li>
-              <li>Some experience</li>
-              <li>Some experience</li>
+              <li>
+                Worked in a fast paced Agile Scrum team, closely collaborating
+                with developers and business team members.
+              </li>
+              <li>
+                Followed Agile (SCRUM) Methodologies for all the phases of SDLC.
+              </li>
+              <li>
+                Reviewed User stories and transformed into test cases and test
+                scripts for manual/automated testing.
+              </li>
+              <li>
+                Designed automation scripts to test REST APIs (HTTP Get, Post,
+                Put, Delete) using REST Assured libraries and Postman tools;
+                deserialize and verify http JSON responses.
+              </li>
+              <li>
+                Executed Regression Testing, System Integration Testing, User
+                Acceptance Testing.
+              </li>
+              <li>
+                Analyzed, facilitated, modeled and organized information in
+                order to elicit requirements, reconcile conflicts, and
+                distinguish solution ideas from business needs.
+              </li>
             </ul>
-          </div> <div class="experience-details">
-            <h5>Company</h5>
+          </div>
+
+          <hr />
+          <div class="experience-details">
+            <h3>Brace AI</h3>
             <span class="experience-date">2022 -2023</span>
             <span class="experience-title">QA</span>
             <ul>
-              <li>Some experience</li>
-              <li>Some experience</li>
-              <li>Some experience</li>
-              <li>Some experience</li>
-              <li>Some experience</li>
-              <li>Some experience</li>
-            </ul>
-          </div> <div class="experience-details">
-            <h5>Company</h5>
-            <span class="experience-date">2022 -2023</span>
-            <span class="experience-title">QA</span>
-            <ul>
-              <li>Some experience</li>
-              <li>Some experience</li>
-              <li>Some experience</li>
-              <li>Some experience</li>
-              <li>Some experience</li>
-              <li>Some experience</li>
+              <li>
+                Worked in a fast paced Agile Scrum team, closely collaborating
+                with developers and business team members.
+              </li>
+              <li>
+                Followed Agile (SCRUM) Methodologies for all the phases of SDLC.
+              </li>
+              <li>
+                Reviewed User stories and transformed into test cases and test
+                scripts for manual/automated testing.
+              </li>
+              <li>
+                Designed automation scripts to test REST APIs (HTTP Get, Post,
+                Put, Delete) using REST Assured libraries and Postman tools;
+                deserialize and verify http JSON responses.
+              </li>
+              <li>
+                Executed Regression Testing, System Integration Testing, User
+                Acceptance Testing.
+              </li>
+              <li>
+                Analyzed, facilitated, modeled and organized information in
+                order to elicit requirements, reconcile conflicts, and
+                distinguish solution ideas from business needs.
+              </li>
             </ul>
           </div>
         </div>
