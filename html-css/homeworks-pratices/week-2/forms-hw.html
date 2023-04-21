@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        margin: 50px;
+        align-items: center;
+      }
+      form input {
+        padding: 10px;
+        margin: 15px;
+        width: 90%;
+        opacity: 0.5;
+        border-radius: 5px;
+        border: silver 2px rgb(157, 182, 252);
+      }
+      input:hover {
+        opacity: 1;
+      }
+      button {
+        padding: 15px;
+        width: 100%;
+        margin: 10px;
+        border-radius: 20px;
+        font-size: large;
+        font-weight: bold;
+        border: solid 1px rgb(157, 182, 252);
+        color: rgb(157, 182, 252);
+        opacity: 0.7;
+      }
+      button:hover {
+        color: white;
+        background-color: rgb(157, 182, 252);
+        opacity: 1;
+      }
+      .boxes {
+        display: flex;
+        width: 100%;
+      }
+      .first-box {
+        display: flex;
+        align-items: center;
+      }
+      h1 {
+        color: rgb(157, 182, 252);
+      }
+
+      .first-box input {
+        padding: 0px;
+        width: 20px;
+        height: 20px;
+        margin-right: 0px;
+      }
+      .first-box span {
+        width: 100%;
+        margin-left: 10px;
+      }
+      img[alt="pic"] {
+        width: 300px;
+        border-left: solid 1px darkblue;
+      }
+      .img-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .img-container img {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        margin: 3px;
+      }
+      .img-container img:hover {
+        transition: 1s;
+        content: url("https://media.giphy.com/media/wAxlCmeX1ri1y/giphy.gif");
+        width: 100px;
+        height: 100px;
+      }
+      #sometext {
+        margin: 20px;
+      }
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        margin: 10px;
+      }
+      a{
+        color: rgb(157, 182, 252);
+      }
+      a:hover{
+        color:rgb(95, 129, 224);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1>Create Account</h1>
+
+        <div class="img-container">
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/picons-social/57/06-facebook-512.png"
+            alt="facebook"
+          />
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/picons-social/57/09-google-3-512.png"
+            alt="google"
+          />
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/social-icons-16/512/LinkedIn_alt-512.png"
+            alt="linkedln"
+          />
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/picons-social/57/03-twitter-512.png"
+            alt="twitter"
+          />
+        </div>
+        <div id="sometext">or use your email for registration:</div>
+        <input type="text" name="name-input" id="name" placeholder="name" />
+        <input type="email" name="email-input" id="email" placeholder="email" />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+
+        <div class="first-box">
+          <input type="checkbox" name="agree" id="agreebox" />
+          <span> I agree to the<a href="#">Terms</a>and<a href="#">Policy</a></span>
+        </div>
+
+        <div class="boxes">
+          <button>Sign Up</button>
+          <button>Sign in</button>
+        </div>
+      </form>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ONGkl--yHXjUjy4Wqtseq5g68kY3n1taYYWAn3Km0g&usqp=CAU&ec=48665701"
+        alt="pic"
+      />
+    </div>
+  </body>
+</html>

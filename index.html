@@ -6,77 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Projects</title>
     <style>
-      .grid-container {
-        display: flex;
-      }
-      .grid-item {
-        width: 100%;
-        height: 500px;
-        background-color: blanchedalmond;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 20px;
-      }
-      body {
-        margin: 0px;
-        background-color: blanchedalmond;
-      }
-      h1 {
-        background-color: bisque;
-        margin: 0px;
-        text-align: center;
-        padding: 30px;
-      }
-      .second-text {
-        display: none;
-      }
-      .grid-item:hover .first-text {
-        display: none;
-      }
-      .grid-item:hover .second-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-      }
-      .grid-item:hover .second-text .aBox {
-        padding: 30px;
-        text-decoration: none;
-        font-weight: bolder;
-        color: black;
-        border: solid 1px;
-      }
-      .gif-img {
-        height: 300px;
-        width: 300px;
-        background-image: url("https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif");
-        background-repeat: no-repeat;
-      }
-      .second-img {
-        height: 300px;
-        width: 300px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-image: url("https://media.giphy.com/media/xFmuT64Jto3mRO4w3G/giphy.gif");
-      }
-      .gif-container {
-        display: flex;
-        justify-content: center;
-        margin-left: 75px;
-      }
-      .third-img {
-        height: 300px;
-        width: 300px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-image: url("https://media.giphy.com/media/xFmuT64Jto3mRO4w3G/giphy.gif");
-      }
-      .fourth-img {
-        height: 300px;
-        width: 400px;
-        background-image: url("https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif");
-        background-repeat: no-repeat;
-      }
+        h1, .aBox:hover{
+            transition: 1.5s;
+            font-size: 40px;
+            font-weight: bold;
+            height: 75px;
+            text-transform: uppercase;
+            background-image: linear-gradient(
+              -225deg,
+              #231557 0%,
+              #44107a 29%,
+              #ff1361 67%,
+              #fff800 100%
+            );
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+       
+         
+        }
+          .grid-container {
+            display: flex;
+          }
+          .grid-item {
+            width: 100%;
+            height: 500px;
+            background-color: blanchedalmond;
+            display: grid;
+            align-items: self-start;
+            text-align: center;
+          }
+          body {
+            margin: 0px;
+            background-color: blanchedalmond;
+          }
+
+          h1 {
+            background-color: bisque;
+            margin: 0px;
+            text-align: center;
+            padding: 30px;
+          }
+          .second-text {
+            display: none;
+          }
+          .grid-item:hover .first-text {
+            display: none;
+          }
+          .grid-item:hover .second-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+          }
+          .grid-item:hover .second-text .aBox {
+            padding: 30px;
+            text-decoration: none;
+            font-weight: bolder;
+            color: black;
+            border: solid 1px;
+          }
+          .gif-img {
+            height: 300px;
+            width: 300px;
+            background-image: url("https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif");
+            background-repeat: no-repeat;
+          }
+          .second-img {
+            height: 300px;
+            width: 300px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("https://media.giphy.com/media/xFmuT64Jto3mRO4w3G/giphy.gif");
+          }
+          .gif-container {
+            display: flex;
+            justify-content: center;
+            margin-left: 75px;
+          }
+          .third-img {
+            height: 300px;
+            width: 300px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("https://media.giphy.com/media/xFmuT64Jto3mRO4w3G/giphy.gif");
+          }
+          .fourth-img {
+            height: 300px;
+            width: 400px;
+            background-image: url("https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif");
+            background-repeat: no-repeat;
+          }
+          .first-text{
+            text-align: center;
+            margin-top: 40%;
+            font-size: 50px;
+            font-weight: 600;
+          }
+         
+          @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }}
     </style>
   </head>
   <body>
@@ -115,25 +151,27 @@
             class="aBox"
             >Deals Of the day</a
           >
-          <a
-            href="html-css/homeworks-pratices/week-2/nike.html"
-            class="aBox"
+          <a href="html-css/homeworks-pratices/week-2/nike.html" class="aBox"
             >Nike</a
           ><a
-          href="html-css/homeworks-pratices/week-2/guitar-store-hw.html"
-          class="aBox"
-          >Guitar Store</a
-        ><a
-        href="html-css/homeworks-pratices/week-2/sticky-menu.html"
-        class="aBox"
-        >Sticky Menu</a
-      ><a
-      href="html-css/homeworks-pratices/week-2/tables-hw.html"
-      class="aBox"
-      >Tables</a
-    >
-         </span
-        >
+            href="html-css/homeworks-pratices/week-2/guitar-store-hw.html"
+            class="aBox"
+            >Guitar Store</a
+          ><a
+            href="html-css/homeworks-pratices/week-2/sticky-menu.html"
+            class="aBox"
+            >Sticky Menu</a
+          ><a
+            href="html-css/homeworks-pratices/week-2/tables-hw.html"
+            class="aBox"
+            >Tables</a
+          >
+          <a
+            href="html-css/homeworks-pratices/week-2/forms-hw.html"
+            class="aBox"
+            >Login Form</a
+          >
+        </span>
       </div>
       <div class="grid-item">
         <span class="first-text">Week 3</span
@@ -151,11 +189,6 @@
         >
       </div>
     </div>
-    <div class="gif-container">
-      <div class="gif-img"></div>
-      <div class="second-img"></div>
-      <div class="third-img"></div>
-      <div class="fourth-img"></div>
-    </div>
+   
   </body>
 </html>
