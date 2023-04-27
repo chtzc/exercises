@@ -20,29 +20,176 @@
       .main-container {
         display: flex;
       }
-      .left-container {
-        flex-grow: 1;
-        border: 1px;
-        width: 50%;
-        margin: 20px;
-      }
-      .bottom-container{
+      .bottom-container {
         display: flex;
         justify-content: space-between;
-        margin:10px;
+        margin: 10px;
         align-items: center;
       }
       .icon-container i {
         width: 20px;
         margin: 10px;
       }
-      .right-container{
+      .right-container .left-container{
         width: 50%;
+        margin: 20px;
+      }
+      .card-header img {
+        content: url("https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_50,h_50,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F230209152722-elon-musk-0127.jpg");
+      }
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .name-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+      }
+      .img-container {
+        display: flex;
+      }
+      .time-container {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-left: 0px;
+      }
+      #opacity {
+        opacity: 0.5;
+      }
+      .time-container li {
+        height: 25px;
+        width: 25px;
+        padding: 10px;
+      }
+      .card {
+        width: 90%;
+        height: auto;
+        margin: 20px;
+      }
+      .like-share-container{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 20px;
+      }
+      .like-container a{
+        text-decoration: none;
+      }
+      .comment-container{
+        background-color: rgb(245, 245, 245);
+        padding: 20px;
+        margin: 10px;
+      }
+      #comment-img {
+        content: url("https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_50,h_50,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F230209152722-elon-musk-0127.jpg");
+        border-radius: 50px;
+      }
+      .comment {
+        display: flex;
+        justify-content: space-between;
+      }
+      .input-group{
+        background-color: rgb(245, 245, 245);
+        padding: 15px;
+        height: 75px;
+        margin: 0px;
+      }
+      .img-container1 {
+        display: flex;
+        flex-direction: row;
         
       }
+      .title-container{
+        margin:10px
+      }
+      div[class="input-group mb-3"]{
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        gap: 10px;
+      }
+      div[class="input-group mb-3"] button{
+       background-color: green;
+       color: white;
+       border-radius: 25px;
+      }
+      .img-container3{
+        display: flex;
+        justify-content: space-between;
+      
+      }
+      .img-container3 img {
+        margin: 10px;
+        width: 25%;
+ 
+      }
+      #name{
+        font-size: large;
+        text-decoration: solid;
+        font-style: italic;
+        font-weight: bold;
+      }
+    #header {
+        margin:0px;
+        width: 100%;
+    }
+    body{
+        margin: 0px;
+    }
+    
+.card-body{
+    padding: 0px;
+}   
+#facebook{
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    transition: 1;
+}
+p{
+    margin: 5px;
+}
+.nav-item:hover{
+    background-color: #0d6efd;
+    border-radius: 5px;
+   
+}
+.nav-item:hover a{
+ color: white;
+   
+}
     </style>
   </head>
   <body>
+    <header>
+    <div class="card text-center"id="header">
+        
+        <div class="card-header" >
+            <i class="fa-brands fa-facebook fa-spin fa-2xl" style="color: #2d5ba9;"></i>
+                     <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log out</a>
+            </li>
+         
+          </ul>
+        </div>
+    
+          
+      </div>
+    </header>
     <div class="main-container">
       <div class="left-container">
         <div class="card">
@@ -56,22 +203,349 @@
                 aria-describedby="addon-wrapping"
               />
             </div>
-            <hr>
+            <hr />
             <div class="bottom-container">
-            <div class="icon-container">
-              <i class="fa-solid fa-location-dot" style="color: #0b61f4"></i>
-              <i class="fa-solid fa-user" style="color: #276add;"></i>
-              <i class="fa-solid fa-camera" style="color: #1c6efd;"></i>
-              <i class="fa-solid fa-video" style="color: #246be5;"></i>
-              <i class="fa-regular fa-calendar" style="color: #2f77f4;"></i>
-            </div>
+              <div class="icon-container">
+                <i class="fa-solid fa-location-dot" style="color: #0b61f4"></i>
+                <i class="fa-solid fa-user" style="color: #0b61f4"></i>
+                <i class="fa-solid fa-camera" style="color: #0b61f4"></i>
+                <i class="fa-solid fa-video" style="color: #0b61f4"></i>
+                <i class="fa-regular fa-calendar" style="color: #0b61f4"></i>
+              </div>
 
-            <a href="#" class="btn btn-primary">Submit</a>
-        </div>
+              <a href="#" class="btn btn-primary">Submit</a>
+            </div>
           </div>
         </div>
+        <div class="card">
+          <div class="card-header">
+            <div class="img-container">
+              <img src="" alt="profile" />
+              <div class="name-container">
+                <span id="name">Cihat Ozcan</span>
+                <span id="opacity"><i class="fa-solid fa-location-dot"></i>   Istanbul Turkey</span>
+              </div>
+            </div>
+            <div class="time-container" id="opacity">
+              <i class="fa-regular fa-calendar"></i> <span>3 hours ago</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              facere fuga numquam. Voluptates eum corporis iure hic aspernatur,
+              ipsam nam blanditiis adipisci facere illum tenetur eveniet
+              accusamus, ipsa praesentium dolorum!
+            </p>
+            <div class="input-group flex-nowrap">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Write a comment..."
+                aria-label="What"
+                aria-describedby="addon-wrapping"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <div class="img-container">
+              <img src="" alt="profile" />
+              <div class="name-container">
+                <span id="name">Cihat Ozcan</span>
+                <span id="opacity"><i class="fa-solid fa-location-dot"></i>   Istanbul Turkey</span>
+              </div>
+            </div>
+            <div class="time-container" id="opacity">
+              <i class="fa-regular fa-calendar"></i> <span>3 hours ago</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <img
+              src="https://media.giphy.com/media/NaxKt9aSzAspO/giphy.gif"
+              class="card-img-top"
+              alt="cartman"
+              width="600px"
+              height="333px"
+            />
+
+            <div class="like-share-container">
+              <div class="like-container">
+                <i class="fa-regular fa-thumbs-up" style="color: #1b59c5;"></i><a href="#"></i>  Like  </a>
+                <i class="fa-regular fa-share-from-square" style="color: #3b6dc4;"></i><a href="#">  Share</a>
+              </div>
+              <span><b>1.789</b> People liked this</span>
+            </div>
+            <div class="comment-container">
+                <div class="comment">
+                    <div class="img-container">
+                        <img src="" alt="profile" id="comment-img"/>
+                        <div class="name-container">
+                          <h3>Reply</h3>
+                          <span id="opacity">Great stuff :D </span>
+                        </div>
+                      </div>
+                      <div class="time-container" id="opacity">
+                       <span>3 hours ago</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="comment-container">
+                    <div class="comment">
+                        <div class="img-container">
+                            <img src="" alt="profile" id="comment-img"/>
+                            <div class="name-container">
+                              <h3>Reply</h3>
+                              <span id="opacity">Great stuff :D </span>
+                            </div>
+                          </div>
+                          <div class="time-container" id="opacity">
+                           <span>3 hours ago</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="comment-container">
+                        <div class="comment">
+                            <div class="img-container">
+                                <img src="" alt="profile" id="comment-img"/>
+                                <div class="name-container">
+                                  <h3>Reply</h3>
+                                  <span id="opacity">Great stuff :D </span>
+                                </div>
+                              </div>
+                              <div class="time-container" id="opacity">
+                               <span>3 hours ago</span>
+                              </div>
+                            </div>
+                        </div>
+            </div>
+            <div class="input-group flex-nowrap">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Write a comment..."
+                aria-label="What"
+                aria-describedby="addon-wrapping"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <div class="img-container">
+                <img src="" alt="profile" />
+                <div class="name-container">
+                    <span id="name">Cihat Ozcan</span>
+                    <span id="opacity"><i class="fa-solid fa-location-dot"></i>   Istanbul Turkey</span>
+                  </div>
+              </div>
+              <div class="time-container" id="opacity">
+                <i class="fa-regular fa-calendar"></i> <span>3 hours ago</span>
+              </div>
+            </div>
+            <div class="card-body">
+                <div class="img-container3">
+              <img
+                src="https://media.giphy.com/media/NaxKt9aSzAspO/giphy.gif"
+                class="card-img-top"
+                alt="cartman"
+                width="100px"
+                height="130px"
+              />
+               
+              <img
+              src="https://media.giphy.com/media/NaxKt9aSzAspO/giphy.gif"
+              class="card-img-top"
+              alt="cartman"
+              width="100px"
+              height="130px"
+            />
+            <img
+            src="https://media.giphy.com/media/NaxKt9aSzAspO/giphy.gif"
+            class="card-img-top"
+            alt="cartman"
+            width="100px"
+              height="130px"
+          />
+        
+        </div>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugiat neque id voluptas repellendus, et sed! Corrupti dolorum dignissimos culpa ab est architecto facilis! Ad eligendi blanditiis nulla deleniti necessitatibus?</p>
+             
+                 
+                    
+              </div>
+              <div class="input-group flex-nowrap">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Write a comment..."
+                  aria-label="What"
+                  aria-describedby="addon-wrapping"
+                />
+              </div>
+            </div>
       </div>
-      <div class="right-container"></div>
+      <div class="right-container">
+        <div class="card">
+            <div class="card-header">
+              <div class="img-container">
+                <img src="" alt="profile" />
+                <div class="name-container">
+                  <span>Cihat Ozcan</span>
+                  <span id="opacity">Istanbul Turkey</span>
+                </div>
+              </div>
+              <div class="time-container" id="opacity">
+                <i class="fa-regular fa-calendar"></i> <span>3 hours ago</span>
+              </div>
+            </div>
+            <div class="card-body">
+                <div class="img-container1">
+              <img
+                src="https://media.giphy.com/media/NaxKt9aSzAspO/giphy.gif"
+                class="card-img-top"
+                alt="cartman"
+                width="300px"
+                height="100px"
+              />
+                <div>
+              <img
+              src="https://media.giphy.com/media/NaxKt9aSzAspO/giphy.gif"
+              class="card-img-top"
+              alt="cartman"
+              width="300px"
+              height="50px"
+            />
+            <img
+            src="https://media.giphy.com/media/NaxKt9aSzAspO/giphy.gif"
+            class="card-img-top"
+            alt="cartman"
+            width="300px"
+            height="50px"
+          />
+        </div>
+        </div>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugiat neque id voluptas repellendus, et sed! Corrupti dolorum dignissimos culpa ab est architecto facilis! Ad eligendi blanditiis nulla deleniti necessitatibus?</p>
+             
+                 
+                    
+              </div>
+              <div class="input-group flex-nowrap">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Write a comment..."
+                  aria-label="What"
+                  aria-describedby="addon-wrapping"
+                />
+              </div>
+            </div>
+            <div class="card">
+                <div class="title-container">
+                    <h3>My City</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus praesentium unde ad, iure iste ex temporibus, qui tempore facere commodi adipisci asperiores dolore consequuntur, atque ut ea! Harum, maiores quasi!</p>
+                <div id="opacity">Last updated 3 mins ago</div>
+                <div class="card-body">
+                </div>
+                
+                  <img
+                    src="https://media.giphy.com/media/NaxKt9aSzAspO/giphy.gif"
+                    class="card-img-top"
+                    alt="cartman"
+                    width="600px"
+                    height="333px"
+                  />                    
+                  </div>
+                  <div class="input-group flex-nowrap">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Left a comment" aria-label="Left a comment" aria-describedby="button-addon2">
+                        <a href="#" class="btn btn-primary">Submit</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                      <div class="img-container">
+                        <img src="" alt="profile" />
+                        <div class="name-container">
+                            <span id="name">Cihat Ozcan</span>
+                            <span id="opacity"><i class="fa-solid fa-location-dot"></i>   Istanbul Turkey</span>
+                          </div>
+                      </div>
+                      <div class="time-container" id="opacity">
+                        <i class="fa-regular fa-calendar"></i> <span>3 hours ago</span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-center" width="600px" height="333px">
+                            <div class="spinner-border" role="status">
+                              <span class="visually-hidden">Loading...</span>
+                            </div>
+                          </div>
+          
+                      <div class="like-share-container">
+                        <div class="like-container">
+                          <i class="fa-regular fa-thumbs-up" style="color: #1b59c5;"></i><a href="#"></i>  Like  </a>
+                          <i class="fa-regular fa-share-from-square" style="color: #3b6dc4;"></i><a href="#">  Share</a>
+                        </div>
+                        <span><b>1.789</b> People liked this</span>
+                      </div>
+                      <div class="comment-container">
+                          <div class="comment">
+                              <div class="img-container">
+                                  <img src="" alt="profile" id="comment-img"/>
+                                  <div class="name-container">
+                                    <h3>Reply</h3>
+                                    <span id="opacity">Great stuff :D </span>
+                                  </div>
+                                </div>
+                                <div class="time-container" id="opacity">
+                                 <span>3 hours ago</span>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="comment-container">
+                              <div class="comment">
+                                  <div class="img-container">
+                                      <img src="" alt="profile" id="comment-img"/>
+                                      <div class="name-container">
+                                        <h3>Reply</h3>
+                                        <span id="opacity">Great stuff :D </span>
+                                      </div>
+                                    </div>
+                                    <div class="time-container" id="opacity">
+                                     <span>3 hours ago</span>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="comment-container">
+                                  <div class="comment">
+                                      <div class="img-container">
+                                          <img src="" alt="profile" id="comment-img"/>
+                                          <div class="name-container">
+                                            <h3>Reply</h3>
+                                            <span id="opacity">Great stuff :D </span>
+                                          </div>
+                                        </div>
+                                        <div class="time-container" id="opacity">
+                                         <span>3 hours ago</span>
+                                        </div>
+                                      </div>
+                                  </div>
+                      </div>
+                      <div class="input-group flex-nowrap">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Write a comment..."
+                          aria-label="What"
+                          aria-describedby="addon-wrapping"
+                        />
+                      </div>
+                    </div>
+                          
+
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
